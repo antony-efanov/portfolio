@@ -1,0 +1,33 @@
+@import "./essentials/typography";
+@import "./essentials/normalize";
+@import "./essentials/breakpoints";
+@import "./essentials/colors";
+@import "./essentials/gridLayout";
+@import "./components";
+
+body {
+  background-color: $colorBG;
+}
+
+.app {
+  margin-block: 25px;
+
+  .card {
+    background-color: $colorWhite;
+    border-radius: 25px;
+    padding: 25px;
+
+    &:hover {
+      box-shadow: 0 0 5px $colorShadow;
+    }
+
+    @include md {
+      border-radius: 45px;
+      padding: 45px;
+    }
+    @include lg {
+      border-radius: 70px;
+      padding: 70px;
+    }
+  }
+}

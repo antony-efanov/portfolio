@@ -1,0 +1,102 @@
+body {
+  display: grid;
+  place-content: center;
+}
+
+.app {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 150px);
+  grid-auto-rows: 150px;
+  grid-template-areas:
+    "main main"
+    "main main"
+    "skills git"
+    "skills linked"
+    "aside aside"
+    "myProjects myProjects"
+    "projectStore projectStore"
+    "projectStore projectStore"
+    "projectStore projectStore"
+    "projectStore projectStore"
+    "projectQR projectQR"
+    "projectQR projectQR"
+    "projectQR projectQR"
+    "projectQR projectQR"
+    "projectRocks projectRocks"
+    "projectRocks projectRocks"
+    "projectRocks projectRocks"
+    "projectRocks projectRocks"
+    "contact contact"
+    "contact contact"
+    "cv cv";
+
+  @include md {
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      "main main skills"
+      "main main skills"
+      "aside git linked"
+      "aside myProjects myProjects"
+      "projectStore projectStore projectStore"
+      "projectStore projectStore projectStore"
+      "projectQR projectQR projectQR"
+      "projectQR projectQR projectQR"
+      "projectRocks projectRocks projectRocks"
+      "projectRocks projectRocks projectRocks"
+      "contact contact cv"
+      "contact contact cv";
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 250px);
+    grid-auto-rows: 250px;
+    grid-template-areas:
+      "main main skills skills"
+      "main main git aside"
+      "linked myProjects myProjects aside"
+      "projectStore projectStore projectStore projectStore"
+      "projectStore projectStore projectStore projectStore"
+      "projectQR projectQR projectQR projectQR"
+      "projectQR projectQR projectQR projectQR"
+      "projectRocks projectRocks projectRocks projectRocks"
+      "projectRocks projectRocks projectRocks projectRocks"
+      "contact contact contact cv"
+      "contact contact contact cv";
+  }
+
+  .main {
+    grid-area: main;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .linked {
+    grid-area: linked;
+  }
+  .git {
+    grid-area: git;
+  }
+  .myProjects {
+    grid-area: myProjects;
+  }
+  .aside {
+    grid-area: aside;
+  }
+  .projectStore {
+    grid-area: projectStore;
+  }
+  .projectQR {
+    grid-area: projectQR;
+  }
+  .projectRocks {
+    grid-area: projectRocks;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  .cv {
+    grid-area: cv;
+  }
+}
