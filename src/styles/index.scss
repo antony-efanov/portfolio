@@ -2,6 +2,7 @@
 @import "./essentials/normalize";
 @import "./essentials/breakpoints";
 @import "./essentials/colors";
+@import "./essentials/mixins";
 @import "./essentials/gridLayout";
 @import "./components";
 
@@ -13,12 +14,11 @@ body {
   margin-block: 25px;
 
   .card {
-    background-color: $colorWhite;
     border-radius: 25px;
     padding: 25px;
 
     &:hover {
-      box-shadow: 0 0 5px $colorShadow;
+      box-shadow: 0 0 10px $colorShadow;
     }
 
     @include md {
@@ -27,7 +27,7 @@ body {
     }
     @include lg {
       border-radius: 70px;
-      padding: 70px;
+      padding: 45px;
     }
   }
 }

@@ -1,0 +1,34 @@
+.git {
+  @include gridCenter;
+  min-height: 100%;
+  min-width: 100%;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgb(14, 13, 19) 0%, rgb(0, 0, 0) 100%);
+  position: relative;
+
+  &__link {
+    position: absolute;
+    display: grid;
+    place-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    @include md {
+      border-radius: 45px;
+    }
+    @include lg {
+      border-radius: 70px;
+    }
+  }
+
+  &__icon {
+    @include md {
+      width: 100px;
+    }
+    @include lg {
+      width: 135px;
+    }
+  }
+}
