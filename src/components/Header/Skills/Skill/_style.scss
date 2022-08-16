@@ -1,0 +1,21 @@
+.skill {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 13px;
+  margin-block-end: 9px;
+
+  &__logo {
+    display: grid;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-block-start: 4px;
+    text-align: center;
+    font-size: 0.5rem;
+  }
+}

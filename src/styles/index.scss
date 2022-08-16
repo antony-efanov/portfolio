@@ -15,7 +15,8 @@ body {
 
   .card {
     border-radius: 25px;
-    padding: 25px;
+
+    transition: box-shadow 175ms ease-in-out;
 
     &:hover {
       box-shadow: 0 0 10px $colorShadow;
@@ -23,11 +24,9 @@ body {
 
     @include md {
       border-radius: 45px;
-      padding: 45px;
     }
     @include lg {
       border-radius: 70px;
-      padding: 45px;
     }
   }
 }
