@@ -1,0 +1,19 @@
+.myProjects {
+  @include gridCenter;
+  color: $colorDark;
+  background-color: $colorWhite;
+  background-image: url(../../../../public/assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: right 35% bottom 50%;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  @include md {
+    font-size: 2rem;
+  }
+
+  @include lg {
+    font-size: 2.5rem;
+  }
+}

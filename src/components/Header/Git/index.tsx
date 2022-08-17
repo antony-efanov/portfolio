@@ -9,7 +9,7 @@ export const Git = () => {
       >
         <img
           className="git__icon"
-          src="portfolio/assets/icons/GitHubLogo.svg"
+          src={`${process.env.PUBLIC_URL}/assets/icons/GitHubLogo.svg`}
           alt="GitHubLogo"
         />
       </a>

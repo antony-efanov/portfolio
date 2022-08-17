@@ -1,15 +1,27 @@
 .skill {
   width: 40px;
   height: 40px;
-
+  color: $colorDark;
   border-radius: 13px;
   margin-block-end: 9px;
+
+  @include md {
+    width: 55px;
+    height: 55px;
+    border-radius: 19px;
+    margin-block-end: 10px;
+  }
 
   &__logo {
     display: grid;
     place-content: center;
     width: 40px;
     height: 40px;
+
+    @include md {
+      width: 55px;
+      height: 55px;
+    }
   }
 
   &__title {
@@ -17,5 +29,15 @@
     margin-block-start: 4px;
     text-align: center;
     font-size: 0.5rem;
+
+    @include md {
+      font-size: 0.6rem;
+      margin-block-start: 5px;
+    }
+
+    @include lg {
+      font-size: 0.65rem;
+      margin-block-start: 6px;
+    }
   }
 }

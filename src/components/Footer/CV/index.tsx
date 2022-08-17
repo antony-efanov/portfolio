@@ -1,3 +1,3 @@
 export const CV = () => {
-  return <section className="card cv">CV</section>;
+  return <section className="card cv">Резюме</section>;
 };

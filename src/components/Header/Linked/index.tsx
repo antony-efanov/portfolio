@@ -9,7 +9,7 @@ export const Linked = () => {
       >
         <img
           className="linked__icon"
-          src="portfolio/assets/icons/LinkedInLogo.svg"
+          src={`${process.env.PUBLIC_URL}/assets/icons/LinkedInLogo.svg`}
           alt="LinkedInLogo"
         />
       </a>
