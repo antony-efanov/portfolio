@@ -4,6 +4,7 @@
   "homepage": "https://antony-efanov.github.io/portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
