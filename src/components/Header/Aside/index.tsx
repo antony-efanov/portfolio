@@ -1,3 +1,3 @@
 export const Aside = () => {
-  return <section className="card aside">aside</section>;
+  return <section className="card aside"></section>;
 };

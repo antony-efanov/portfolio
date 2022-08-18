@@ -1,0 +1,118 @@
+.project {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background-color: $colorWhite;
+  padding: 2rem;
+
+  @include md {
+    padding: 2.5rem;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  @include lg {
+    padding: 3.5rem;
+    justify-content: space-around;
+  }
+
+  .image {
+    align-self: center;
+    @include md {
+      align-self: end;
+    }
+
+    img {
+      width: 200px;
+      @include md {
+        width: 280px;
+        position: relative;
+        bottom: -2.75rem;
+      }
+      @include lg {
+        width: 350px;
+        right: 15px;
+        bottom: -3.8rem;
+      }
+    }
+  }
+
+  .description {
+    &__title {
+      color: $colorDark;
+      font-size: 1.75rem;
+      margin-block: 0.75rem;
+
+      @include md {
+        font-size: 1.8rem;
+        margin-block: 1rem;
+      }
+
+      @include lg {
+        font-size: 2.5rem;
+        margin-block: 1rem;
+      }
+    }
+
+    .techs {
+      display: flex;
+      gap: 10px;
+
+      .tech {
+        display: flex;
+        gap: 5px;
+        background-color: $colorGrey;
+        padding: 7px 10px;
+        border-radius: 100vw;
+        align-items: center;
+
+        @include lg {
+          gap: 7px;
+          padding: 8px 13px;
+        }
+
+        img {
+          width: 15px;
+          @include lg {
+            width: 25px;
+          }
+        }
+
+        p {
+          color: $colorDark;
+          margin: 0;
+          font-size: 0.75rem;
+          @include lg {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    &__text {
+      @include lg {
+        font-size: 1.25rem;
+        width: 400px;
+      }
+    }
+
+    &__buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 0.75rem;
+
+      @include lg {
+        margin-top: 4rem;
+      }
+      .button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+
+        @include lg {
+          padding: 1rem 2rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

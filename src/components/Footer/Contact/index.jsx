@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const form = useRef();
+  const [notification, setNotification] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,13 +24,16 @@ export const Contact = () => {
         }
       );
 
+    setNotification(true);
+
     setTimeout(() => {
       e.target.reset();
-    }, 1000);
+      setNotification(false);
+    }, 2000);
   };
 
   return (
-    <section className="card contact">
+    <section id="contact" className="card contact">
       <h2 className="contact__title">Зв'язок</h2>
       <form className="contact__form" ref={form} onSubmit={sendEmail}>
         <div className="contact__form--name-email">
@@ -64,6 +68,17 @@ export const Contact = () => {
           Відправити
         </button>
       </form>
+
+      {notification && (
+        <div className="sendNotification">
+          <img
+            className="sendNotification__icon"
+            src={`${process.env.PUBLIC_URL}/assets/icons/check.svg`}
+            alt=""
+          />
+          <p className="sendNotification__message">Повідомлення надіслано</p>
+        </div>
+      )}
     </section>
   );
 };
