@@ -1,0 +1,29 @@
+.tech {
+  display: flex;
+  gap: 5px;
+  background-color: $colorGrey;
+  padding: 7px 10px;
+  border-radius: 100vw;
+  align-items: center;
+
+  @include lg {
+    gap: 7px;
+    padding: 8px 13px;
+  }
+
+  &__img {
+    width: 15px;
+    @include lg {
+      width: 25px;
+    }
+  }
+
+  &__name {
+    color: $colorDark;
+    margin: 0;
+    font-size: 0.75rem;
+    @include lg {
+      font-size: 1rem;
+    }
+  }
+}

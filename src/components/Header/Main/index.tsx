@@ -1,6 +1,9 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { ThemeContext } from "../../../App";
+import ReactSwitch from "react-switch";
 
 export const Main: FC = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <section className="card main">
       <img
@@ -18,6 +21,14 @@ export const Main: FC = () => {
       <a href="#contact">
         <button className="main__button generalButton">Зв'язатися</button>
       </a>
+      <div className="themeSwitcher">
+        <ReactSwitch
+          checkedIcon={false}
+          uncheckedIcon={false}
+          onChange={toggleTheme}
+          checked={theme === "dark"}
+        />
+      </div>
     </section>
   );
 };

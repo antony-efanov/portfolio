@@ -1,4 +1,6 @@
-export const Git = () => {
+import { FC } from "react";
+
+export const Git: FC = () => {
   return (
     <section className="card git">
       <a

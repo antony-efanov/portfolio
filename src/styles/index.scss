@@ -1,20 +1,37 @@
 @import "./essentials/typography";
 @import "./essentials/normalize";
 @import "./essentials/breakpoints";
-@import "./essentials/colors";
+@import "./themes/colors/dark";
+@import "./themes/colors/default";
+@import "./themes/styles";
 @import "./essentials/mixins";
 @import "./essentials/gridLayout";
 @import "./components";
-
 @import "./UI/buttons";
 
 body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.background {
   background-color: $colorBG;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#dark .background {
+  background-color: $colorBG_dark;
 }
 
 .app {
   margin-block: 25px;
-
+  margin-block-end: 125px;
   .card {
     border-radius: 25px;
 

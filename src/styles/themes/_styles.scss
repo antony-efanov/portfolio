@@ -1,0 +1,11 @@
+#dark .main {
+  background-color: $colorWhite_dark;
+  &__about {
+    &--name {
+      color: $colorDark_dark;
+    }
+    &--text {
+      color: $colorDark_dark;
+    }
+  }
+}

@@ -1,4 +1,6 @@
-export const Linked = () => {
+import { FC } from "react";
+
+export const Linked: FC = () => {
   return (
     <section className="card linked">
       <a

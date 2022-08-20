@@ -1,12 +1,12 @@
 import { FC } from "react";
 
-interface IMyProps {
+interface ISkillProps {
   colorBG: string;
   title: string;
   imgSrc: string;
 }
 
-export const Skill: FC<IMyProps> = ({ colorBG, title, imgSrc }) => {
+export const Skill: FC<ISkillProps> = ({ colorBG, title, imgSrc }) => {
   return (
     <div className="skill" style={{ backgroundColor: colorBG }}>
       <div className="skill__logo">

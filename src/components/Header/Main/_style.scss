@@ -5,6 +5,7 @@
   justify-content: space-between;
   background-color: $colorWhite;
   padding: 1.5rem;
+  position: relative;
 
   @include md {
     padding: 2rem;
@@ -30,7 +31,7 @@
     &--title {
       color: $colorDark;
 
-      background: -webkit-linear-gradient(0deg, #ff9292 0%, #f6cd64 100%);
+      background: -webkit-linear-gradient($gradientMain);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
@@ -86,6 +87,21 @@
     @include lg {
       font-size: 1.1rem;
       padding: 1.1rem 2.2rem;
+    }
+  }
+
+  .themeSwitcher {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+
+    @include md {
+      right: 2rem;
+      top: 2rem;
+    }
+    @include lg {
+      right: 3rem;
+      top: 3rem;
     }
   }
 }
