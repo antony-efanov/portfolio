@@ -1,3 +1,35 @@
 .aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $colorWhite;
+  padding: 1.5rem;
+  gap: 1rem;
+
+  @include md {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  @include md {
+    padding: 3rem;
+  }
+
+  &__image {
+    width: 90px;
+
+    @include md {
+      width: 110px;
+    }
+
+    @include lg {
+      width: 130px;
+    }
+  }
+
+  &__text {
+    color: $colorDark;
+    text-align: center;
+  }
 }

@@ -2,12 +2,40 @@
   @include gridCenter;
   color: $colorDark;
   background-color: $colorWhite;
-  background-image: url(../../../../public/assets/arrow.svg);
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: right 35% bottom 50%;
   font-size: 1.8rem;
   font-weight: 700;
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    right: 24%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 75px;
+
+    path {
+      fill: #c0c0c0;
+    }
+
+    @include md {
+      width: 85px;
+      right: 28%;
+    }
+
+    @include lg {
+      width: 100px;
+      right: 28.5%;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+  }
 
   @include md {
     font-size: 2rem;

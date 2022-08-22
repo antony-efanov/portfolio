@@ -13,7 +13,7 @@ body {
     "main main"
     "skills git"
     "skills linked"
-    "aside aside"
+    "cv cv"
     "myProjects myProjects"
     "projectStore projectStore"
     "projectStore projectStore"
@@ -30,7 +30,7 @@ body {
     "contact contact"
     "contact contact"
     "contact contact"
-    "cv cv";
+    "aside aside";
 
   @include md {
     gap: 20px;
@@ -39,16 +39,16 @@ body {
     grid-template-areas:
       "main main skills"
       "main main skills"
-      "aside git linked"
-      "aside myProjects myProjects"
+      "cv git linked"
+      "cv myProjects myProjects"
       "projectStore projectStore projectStore"
       "projectStore projectStore projectStore"
       "projectQR projectQR projectQR"
       "projectQR projectQR projectQR"
       "projectRocks projectRocks projectRocks"
       "projectRocks projectRocks projectRocks"
-      "contact contact cv"
-      "contact contact cv";
+      "contact contact aside"
+      "contact contact aside";
   }
 
   @include lg {
@@ -57,16 +57,16 @@ body {
     grid-auto-rows: 250px;
     grid-template-areas:
       "main main skills skills"
-      "main main git aside"
-      "linked myProjects myProjects aside"
+      "main main git cv"
+      "linked myProjects myProjects cv"
       "projectStore projectStore projectStore projectStore"
       "projectStore projectStore projectStore projectStore"
       "projectQR projectQR projectQR projectQR"
       "projectQR projectQR projectQR projectQR"
       "projectRocks projectRocks projectRocks projectRocks"
       "projectRocks projectRocks projectRocks projectRocks"
-      "contact contact contact cv"
-      "contact contact contact cv";
+      "contact contact contact aside"
+      "contact contact contact aside";
   }
 
   .main {

@@ -9,3 +9,61 @@
     }
   }
 }
+
+#dark .skills {
+  background-color: $colorWhite_dark;
+  color: $colorDark_dark;
+  border: 6px solid $colorGrey_dark;
+  &::before {
+    background-color: $colorGrey_dark;
+  }
+  &::after {
+    background-color: $colorGrey_dark;
+  }
+}
+
+#dark .skill {
+  color: $colorDark_dark;
+}
+
+#dark .myProjects {
+  color: $colorDark_dark;
+  background-color: $colorWhite_dark;
+}
+
+#dark .project {
+  background-color: $colorWhite_dark;
+  .description {
+    &__title {
+      color: $colorDark_dark;
+    }
+    &__text {
+      color: $colorDark_dark;
+    }
+  }
+}
+
+#dark .projectLeft {
+  background-color: $colorWhite_dark;
+  .description {
+    &__title {
+      color: $colorDark_dark;
+    }
+    &__text {
+      color: $colorDark_dark;
+    }
+  }
+}
+
+#dark .myProjects__arrow {
+  path {
+    fill: #525252;
+  }
+}
+
+#dark .aside {
+  background-color: $colorWhite_dark;
+  &__text {
+    color: $colorDark_dark;
+  }
+}

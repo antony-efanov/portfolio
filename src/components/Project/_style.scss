@@ -60,6 +60,7 @@
     }
 
     &__text {
+      color: $colorDark;
       @include lg {
         font-size: 1.25rem;
         width: 400px;
