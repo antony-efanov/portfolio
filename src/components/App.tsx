@@ -1,6 +1,6 @@
-import { Header } from "./components/Header";
-import { Project } from "./components/Project";
-import { Footer } from "./components/Footer";
+import { Header } from "./Header";
+import { Project } from "./Project";
+import { Footer } from "./Footer";
 import { createContext, useState } from "react";
 
 export const ThemeContext = createContext<any>(null);

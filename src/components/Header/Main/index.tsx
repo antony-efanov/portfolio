@@ -1,5 +1,5 @@
 import { FC, useContext } from "react";
-import { ThemeContext } from "../../../App";
+import { ThemeContext } from "../../App";
 import ReactSwitch from "react-switch";
 
 export const Main: FC = () => {
@@ -23,6 +23,7 @@ export const Main: FC = () => {
       </a>
       <div className="themeSwitcher">
         <ReactSwitch
+          aria-label="Theme-toggle"
           onColor="#ff9292"
           offColor="#bebebe"
           checkedIcon={false}
