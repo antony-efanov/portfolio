@@ -1,6 +1,8 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "../../App";
 
 export const Aside: FC = () => {
+  const { language } = useContext(AppContext);
   return (
     <section className="card aside">
       <img
@@ -9,7 +11,9 @@ export const Aside: FC = () => {
         alt="thank_you"
       />
       <p className="aside__text">
-        Дякую за приділений час. Давайте зробимо щось разом :)
+        {language === "ua"
+          ? "Дякую за приділений час. Давайте зробимо щось разом"
+          : "Thank you for your time. Let's make something together"}
       </p>
     </section>
   );

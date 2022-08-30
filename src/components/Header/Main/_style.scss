@@ -105,6 +105,21 @@
     }
   }
 
+  .languageSwitcher {
+    position: absolute;
+    right: 5.5rem;
+    top: 1.5rem;
+
+    @include md {
+      right: 6rem;
+      top: 2rem;
+    }
+    @include lg {
+      right: 7rem;
+      top: 3rem;
+    }
+  }
+
   .iconWrapper {
     display: grid;
     place-content: center;

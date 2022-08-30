@@ -1,6 +1,8 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "../../App";
 
 export const MyProjects: FC = () => {
+  const { language } = useContext(AppContext);
   return (
     <section className="card myProjects">
       <svg
@@ -16,7 +18,9 @@ export const MyProjects: FC = () => {
           fill="#bebebe"
         />
       </svg>
-      <h3 className="myProjects__title">Проєкти</h3>
+      <h3 className="myProjects__title">
+        {language === "ua" ? "Проєкти" : "Projects"}
+      </h3>
     </section>
   );
 };

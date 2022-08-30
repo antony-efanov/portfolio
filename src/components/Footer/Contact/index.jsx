@@ -1,7 +1,9 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { AppContext } from "../../App";
 
 export const Contact = () => {
+  const { language } = useContext(AppContext);
   const form = useRef();
   const [notification, setNotification] = useState(false);
 
@@ -34,14 +36,16 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="card contact">
-      <h2 className="contact__title">Зв'язок</h2>
+      <h2 className="contact__title">
+        {language === "ua" ? "Зв'язок" : "Get in Touch"}
+      </h2>
       <form className="contact__form" ref={form} onSubmit={sendEmail}>
         <div className="contact__form--name-email">
           <input
             className="contact__form--nameField contactField"
             type="text"
             name="user_name"
-            placeholder="Ім'я"
+            placeholder={language === "ua" ? "Ім'я" : "Name"}
             required
           />
 
@@ -57,7 +61,7 @@ export const Contact = () => {
         <textarea
           className="contact__form--messageField contactField"
           name="message"
-          placeholder="Повідомлення"
+          placeholder={language === "ua" ? "Повідомлення" : "Message"}
           required
         />
 
@@ -65,7 +69,7 @@ export const Contact = () => {
           className="contact__form--sendButton generalButton"
           type="submit"
         >
-          Відправити
+          {language === "ua" ? "Відправити" : "Send"}
         </button>
       </form>
 
@@ -76,7 +80,9 @@ export const Contact = () => {
             src={`${process.env.PUBLIC_URL}/assets/icons/check.svg`}
             alt=""
           />
-          <p className="sendNotification__message">Повідомлення надіслано</p>
+          <p className="sendNotification__message">
+            {language === "ua" ? "Повідомлення надіслано" : "Message send"}
+          </p>
         </div>
       )}
     </section>

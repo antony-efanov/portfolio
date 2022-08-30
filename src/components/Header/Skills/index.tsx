@@ -1,10 +1,15 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "../../App";
 import { Skill } from "./Skill";
 
 export const Skills: FC = () => {
+  const { language } = useContext(AppContext);
+
   return (
     <section className="card skills">
-      <h3 className="skills__title">Навички</h3>
+      <h3 className="skills__title">
+        {language === "ua" ? "Навички" : "Skills"}
+      </h3>
       <div className="skillList">
         <Skill
           colorBG="hsl(177, 58%, 77%)"

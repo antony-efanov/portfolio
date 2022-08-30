@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "../App";
 import { Tech } from "./Tech";
 
 interface IProjectProps {
@@ -20,6 +21,7 @@ export const Project: FC<IProjectProps> = ({
   description,
   techs,
 }) => {
+  const { language } = useContext(AppContext);
   return (
     <section className={className}>
       <div className="description">
@@ -37,7 +39,9 @@ export const Project: FC<IProjectProps> = ({
         <p className="description__text">{description}</p>
         <div className="description__buttons">
           <a href={demoLink} rel="noreferrer" target="_blank">
-            <button className="button generalButton">Спробувати</button>
+            <button className="button generalButton">
+              {language === "ua" ? "Спробувати" : "Demo"}
+            </button>
           </a>
           <a href={gitHub} rel="noreferrer" target="_blank">
             <button className="button generalButton">GitHub</button>

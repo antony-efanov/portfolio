@@ -3,7 +3,7 @@ import { Project } from "./Project";
 import { Footer } from "./Footer";
 import { createContext, useState } from "react";
 
-export const ThemeContext = createContext<any>(null);
+export const AppContext = createContext<any>(null);
 
 enum Techs {
   React = "React",
@@ -14,11 +14,21 @@ enum Techs {
 function App() {
   const [theme, setTheme] = useState<string>("light");
 
+  const [language, setLanguage] = useState("ua");
+
   const toggleTheme = (): void => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
+
+  const toggleLanguage = () => {
+    setLanguage((curr) => (curr === "ua" ? "en" : "ua"));
+    console.log(language);
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <AppContext.Provider
+      value={{ theme, language, toggleTheme, toggleLanguage }}
+    >
       <div className="app" id={theme}>
         <div className="background"></div>
         <Header />
@@ -51,7 +61,7 @@ function App() {
         />
         <Footer />
       </div>
-    </ThemeContext.Provider>
+    </AppContext.Provider>
   );
 }
 
