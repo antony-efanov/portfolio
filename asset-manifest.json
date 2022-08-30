@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.90fcc478.css",
-    "main.js": "/portfolio/static/js/main.0d9b5634.js",
+    "main.css": "/portfolio/static/css/main.15b4cb05.css",
+    "main.js": "/portfolio/static/js/main.27ebf93f.js",
+    "static/media/Anton_Yefanov.pdf": "/portfolio/static/media/Anton_Yefanov.d7602e0ceb920e33acb7.pdf",
     "index.html": "/portfolio/index.html",
-    "main.90fcc478.css.map": "/portfolio/static/css/main.90fcc478.css.map",
-    "main.0d9b5634.js.map": "/portfolio/static/js/main.0d9b5634.js.map"
+    "main.15b4cb05.css.map": "/portfolio/static/css/main.15b4cb05.css.map",
+    "main.27ebf93f.js.map": "/portfolio/static/js/main.27ebf93f.js.map"
   },
   "entrypoints": [
-    "static/css/main.90fcc478.css",
-    "static/js/main.0d9b5634.js"
+    "static/css/main.15b4cb05.css",
+    "static/js/main.27ebf93f.js"
   ]
 }
