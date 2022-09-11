@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.19e3a2d7.css",
-    "main.js": "/portfolio/static/js/main.1d425384.js",
-    "static/media/Anton_Yefanov.pdf": "/portfolio/static/media/Anton_Yefanov.d7602e0ceb920e33acb7.pdf",
-    "static/media/Anton_Yefanov_en.pdf": "/portfolio/static/media/Anton_Yefanov_en.3975d90e533f61ac8911.pdf",
+    "main.js": "/portfolio/static/js/main.b1878efc.js",
+    "static/media/Anton_Yefanov.pdf": "/portfolio/static/media/Anton_Yefanov.6f215e6f57a208c6641b.pdf",
+    "static/media/Anton_Yefanov_en.pdf": "/portfolio/static/media/Anton_Yefanov_en.74363c64b440c9f1ab76.pdf",
     "static/media/hand.webp": "/portfolio/static/media/hand.98819188ec180c93c71b.webp",
     "static/media/React.svg": "/portfolio/static/media/React.7ead53ea012e7ea60fbedcee752514aa.svg",
     "static/media/Sun.svg": "/portfolio/static/media/Sun.a586be9e986df587232340857ccedaae.svg",
@@ -15,10 +15,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/UA.svg": "/portfolio/static/media/UA.333917f26143ce1d161ff20176540d1b.svg",
     "main.19e3a2d7.css.map": "/portfolio/static/css/main.19e3a2d7.css.map",
-    "main.1d425384.js.map": "/portfolio/static/js/main.1d425384.js.map"
+    "main.b1878efc.js.map": "/portfolio/static/js/main.b1878efc.js.map"
   },
   "entrypoints": [
     "static/css/main.19e3a2d7.css",
-    "static/js/main.1d425384.js"
+    "static/js/main.b1878efc.js"
   ]
 }
